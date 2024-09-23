@@ -37,7 +37,7 @@
   align-items: center;
   cursor: pointer;
   padding: 1rem;
-  width: 9.05rem;
+  width: 13rem;
   gap: 1rem;
   transition: width 0.3s ease, background-color 0.3s ease;
 }
