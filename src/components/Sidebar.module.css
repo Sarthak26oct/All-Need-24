@@ -4,12 +4,18 @@
   display: flex;
   flex-direction: column;
   position: fixed;
-  padding-top: 3.5rem;
-  transition: width 0.3s;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  margin-top: 3.5rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  gap: 1rem;
 }
 
 .open {
-  width: 3.75rem;
+  width: 10rem;
 }
 
 .closed {
@@ -23,6 +29,7 @@
   padding: 1rem;
   color: white;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .menuItem:hover {
@@ -35,4 +42,5 @@
 
 .icon {
   font-size: 1.5rem;
+  transition: all 0.3s ease;
 }

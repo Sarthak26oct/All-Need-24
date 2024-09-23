@@ -4,7 +4,6 @@ import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import { store } from "./redux/store";
 import Header from "./components/Header";
-import "./App.css";
 import {
   Navigate,
   Route,
@@ -12,9 +11,10 @@ import {
   Routes,
 } from "react-router-dom";
 import NotFound from "./pages/NotFound";
+import "./App.css";
 
 function App() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -22,19 +22,21 @@ function App() {
 
   return (
     <Provider store={store}>
-      <div className="app">
-        <div className="main">
-          <Router>
-            <Header toggleSidebar={toggleSidebar} />
-            <Sidebar isOpen={isSidebarOpen} />
+      <div
+        className={`app ${isSidebarOpen ? "sidebar-open" : "sidebar-closed"}`}
+      >
+        <Router>
+          <Header isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+          <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
 
+          <div className="main">
             <Routes>
               <Route path="/" element={<Navigate to="/dashboard" />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
-          </Router>
-        </div>
+          </div>
+        </Router>
       </div>
     </Provider>
   );

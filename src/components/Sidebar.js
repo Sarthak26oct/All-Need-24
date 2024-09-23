@@ -6,9 +6,10 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import FolderIcon from "@mui/icons-material/Folder";
 import LanguageIcon from "@mui/icons-material/Language";
-import SettingsIcon from "@mui/icons-material/Settings";
+import TableRowsIcon from "@mui/icons-material/TableRows";
 import BoxIcon from "@mui/icons-material/AllInbox";
 import DashboardIcon from "@mui/icons-material/Dashboard";
+import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
 import { NavLink } from "react-router-dom";
 
 const Sidebar = ({ isOpen }) => {
@@ -25,6 +26,7 @@ const Sidebar = ({ isOpen }) => {
         }
       >
         <DashboardIcon className={styles.icon} />
+        {isOpen && <span>Dashboard</span>}
       </NavLink>
 
       <NavLink
@@ -36,6 +38,7 @@ const Sidebar = ({ isOpen }) => {
         }
       >
         <PersonIcon className={styles.icon} />
+        {isOpen && <span>User</span>}
       </NavLink>
 
       <NavLink
@@ -47,6 +50,7 @@ const Sidebar = ({ isOpen }) => {
         }
       >
         <StorefrontIcon className={styles.icon} />
+        {isOpen && <span>Vendor</span>}
       </NavLink>
 
       <NavLink
@@ -58,6 +62,7 @@ const Sidebar = ({ isOpen }) => {
         }
       >
         <DescriptionIcon className={styles.icon} />
+        {isOpen && <span>Order History</span>}
       </NavLink>
 
       <NavLink
@@ -69,6 +74,7 @@ const Sidebar = ({ isOpen }) => {
         }
       >
         <BusinessCenterIcon className={styles.icon} />
+        {isOpen && <span>Business</span>}
       </NavLink>
 
       <NavLink
@@ -79,7 +85,8 @@ const Sidebar = ({ isOpen }) => {
             : `${styles.menuItem}`
         }
       >
-        <SettingsIcon className={styles.icon} />
+        <TableRowsIcon className={styles.icon} />
+        {isOpen && <span>Catergory</span>}
       </NavLink>
 
       <NavLink
@@ -91,6 +98,19 @@ const Sidebar = ({ isOpen }) => {
         }
       >
         <FolderIcon className={styles.icon} />
+        {isOpen && <span>Sub-Category</span>}
+      </NavLink>
+
+      <NavLink
+        to="/language"
+        className={({ isActive }) =>
+          isActive
+            ? `${styles.menuItem} ${styles.active}`
+            : `${styles.menuItem}`
+        }
+      >
+        <ManageAccountsIcon className={styles.icon} />
+        {isOpen && <span>User Management</span>}
       </NavLink>
 
       <NavLink
@@ -102,6 +122,7 @@ const Sidebar = ({ isOpen }) => {
         }
       >
         <LanguageIcon className={styles.icon} />
+        {isOpen && <span>Academy</span>}
       </NavLink>
 
       <NavLink
@@ -113,6 +134,7 @@ const Sidebar = ({ isOpen }) => {
         }
       >
         <BoxIcon className={styles.icon} />
+        {isOpen && <span>Product</span>}
       </NavLink>
     </div>
   );

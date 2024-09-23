@@ -1,8 +1,22 @@
 .app {
   display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  transition: width 0.3s;
 }
 
 .main {
   flex-grow: 1;
-  background-color: #f9f9f9;
+  transition: margin-left 0.3s;
+  overflow: hidden;
+}
+
+.sidebar-open .main {
+  margin-left: 10rem;
+}
+
+.sidebar-closed .main {
+  margin-left: 0;
 }
