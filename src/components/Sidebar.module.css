@@ -1,0 +1,38 @@
+.sidebar {
+  background-color: #3b0059;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  padding-top: 3.5rem;
+  transition: width 0.3s;
+}
+
+.open {
+  width: 3.75rem;
+}
+
+.closed {
+  width: 0;
+  overflow: hidden;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  background-color: #50106e;
+}
+
+.active {
+  background-color: #50106e;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
