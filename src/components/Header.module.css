@@ -37,7 +37,7 @@
   align-items: center;
   cursor: pointer;
   padding: 1rem;
-  width: 9.1rem;
+  width: 9.05rem;
   gap: 1rem;
   transition: width 0.3s ease, background-color 0.3s ease;
 }
@@ -51,6 +51,7 @@
   color: #3b0059;
   font-size: 24px;
   margin: 0;
+  margin-left: 10px;
 }
 
 .userProfile {
@@ -59,6 +60,7 @@
   font-size: 1rem;
   color: #3b0059;
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .profileIcon {
