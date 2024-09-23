@@ -32,12 +32,11 @@
   transition: all 0.3s ease;
 }
 
-.menuItem:hover {
-  background-color: #50106e;
-}
-
+.menuItem:hover,
 .active {
   background-color: #50106e;
+  color: gold;
+  border-left: solid 3px gold;
 }
 
 .icon {

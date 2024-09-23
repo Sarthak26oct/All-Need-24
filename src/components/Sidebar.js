@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen }) => {
       </NavLink>
 
       <NavLink
-        to="/home"
+        to="/user"
         className={({ isActive }) =>
           isActive
             ? `${styles.menuItem} ${styles.active}`
@@ -42,7 +42,7 @@ const Sidebar = ({ isOpen }) => {
       </NavLink>
 
       <NavLink
-        to="/store"
+        to="/vendor"
         className={({ isActive }) =>
           isActive
             ? `${styles.menuItem} ${styles.active}`
@@ -54,7 +54,7 @@ const Sidebar = ({ isOpen }) => {
       </NavLink>
 
       <NavLink
-        to="/description"
+        to="/order-history"
         className={({ isActive }) =>
           isActive
             ? `${styles.menuItem} ${styles.active}`
@@ -78,7 +78,7 @@ const Sidebar = ({ isOpen }) => {
       </NavLink>
 
       <NavLink
-        to="/setting"
+        to="/category"
         className={({ isActive }) =>
           isActive
             ? `${styles.menuItem} ${styles.active}`
@@ -90,7 +90,7 @@ const Sidebar = ({ isOpen }) => {
       </NavLink>
 
       <NavLink
-        to="/folder"
+        to="/sub-category"
         className={({ isActive }) =>
           isActive
             ? `${styles.menuItem} ${styles.active}`
@@ -102,7 +102,7 @@ const Sidebar = ({ isOpen }) => {
       </NavLink>
 
       <NavLink
-        to="/language"
+        to="/user-management"
         className={({ isActive }) =>
           isActive
             ? `${styles.menuItem} ${styles.active}`
@@ -114,7 +114,7 @@ const Sidebar = ({ isOpen }) => {
       </NavLink>
 
       <NavLink
-        to="/language"
+        to="/academy"
         className={({ isActive }) =>
           isActive
             ? `${styles.menuItem} ${styles.active}`
@@ -126,7 +126,7 @@ const Sidebar = ({ isOpen }) => {
       </NavLink>
 
       <NavLink
-        to="/details"
+        to="/product"
         className={({ isActive }) =>
           isActive
             ? `${styles.menuItem} ${styles.active}`
