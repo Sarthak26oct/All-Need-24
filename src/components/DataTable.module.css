@@ -1,0 +1,68 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+thead tr {
+  border-radius: 10px;
+}
+
+.th {
+  background-color: #52057b;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.tr {
+  background-color: #f9f9f9;
+}
+
+.tr:hover {
+  background-color: #f1f1f1;
+}
+
+.editBtn,
+.deleteBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.editBtn {
+  color: #ffa500;
+}
+
+.deleteBtn {
+  color: #ff4d4d;
+}
+
+.listbtn {
+  background-color: #52057b;
+}
+
+.editBtn:hover,
+.deleteBtn:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .table,
+  .th,
+  .td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

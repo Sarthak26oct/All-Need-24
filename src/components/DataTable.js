@@ -1,6 +1,6 @@
 import React from "react";
-import style from './User.module.css';
-import TocIcon from '@mui/icons-material/Toc'
+import style from "./DataTable.module.css";
+import TocIcon from "@mui/icons-material/Toc";
 
 const DataTable = ({ headers, data, onEdit, onDelete, userAction }) => {
   return (
@@ -8,7 +8,9 @@ const DataTable = ({ headers, data, onEdit, onDelete, userAction }) => {
       <thead>
         <tr>
           {headers.map((header, index) => (
-            <th key={index} className={style.th}>{header}</th>
+            <th key={index} className={style.th}>
+              {header}
+            </th>
           ))}
           <th className={style.th}>Action</th>
         </tr>
@@ -17,17 +19,35 @@ const DataTable = ({ headers, data, onEdit, onDelete, userAction }) => {
         {data.map((row, rowIndex) => (
           <tr key={rowIndex} className={style.tr}>
             {Object.values(row).map((value, cellIndex) => (
-              <td key={cellIndex} className={style.td}>{value}</td>
+              <td key={cellIndex} className={style.td}>
+                {value}
+              </td>
             ))}
-           { userAction ?<td className={style.td}>
-              <button onClick={() => onEdit(rowIndex)} className={style.editBtn}>✏️</button>
-              <button onClick={() => onDelete(rowIndex)} className={style.deleteBtn}>🗑️</button>
-            </td> :
-            
-           
-            <td className={style.tds}>
-              <button onClick={() => onDelete(rowIndex)} className={style.listBtn}><TocIcon/></button>
-            </td>}
+            {userAction ? (
+              <td className={style.td}>
+                <button
+                  onClick={() => onEdit(rowIndex)}
+                  className={style.editBtn}
+                >
+                  ✏️
+                </button>
+                <button
+                  onClick={() => onDelete(rowIndex)}
+                  className={style.deleteBtn}
+                >
+                  🗑️
+                </button>
+              </td>
+            ) : (
+              <td className={style.td}>
+                <button
+                  onClick={() => onDelete(rowIndex)}
+                  className={style.listBtn}
+                >
+                  <TocIcon />
+                </button>
+              </td>
+            )}
           </tr>
         ))}
       </tbody>

@@ -1,0 +1,49 @@
+.path {
+  color: #55025d;
+  margin-bottom: 1rem;
+}
+
+.underline {
+  border-bottom: solid 1px #55025d;
+}
+
+.heading {
+  font-size: larger;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.formContainer {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.basicDetails {
+  color: #55025d;
+  font-size: large;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  text-align: right;
+  padding: 1rem;
+}
+
+.cancel,
+.update {
+  padding: 0.4rem;
+  margin: 0.5rem;
+  width: 6rem;
+  cursor: pointer;
+}
+
+.update {
+  background-color: #3b0059;
+  color: #fff;
+  border: solid 1px #3b0059;
+}
+
+.update:hover {
+  background-color: #50106e;
+}

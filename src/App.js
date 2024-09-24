@@ -12,8 +12,9 @@ import {
 } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import "./App.css";
-import User from "./pages/user";
-import OrderHistory from "./pages/orderhistory";
+import OrderHistory from "./pages/OrderHistory";
+import User from "./pages/User";
+import UpdateUser from "./pages/UpdateUser";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -35,6 +36,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Navigate to="/dashboard" />} />
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/dashboard/user/:id" element={<UpdateUser />} />
               <Route path="/user" element={<User />} />
               <Route path="/order-history" element={<OrderHistory />} />
               <Route path="*" element={<NotFound />} />
