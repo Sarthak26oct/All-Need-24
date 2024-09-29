@@ -82,7 +82,7 @@ const User = () => {
       <div className={styles.path}>
         <span className={styles.underline}>Dashboard </span>/ User
       </div>
-
+      <h2>User List</h2>
       <DataTable
         headers={headers}
         data={userWithSerialNo}

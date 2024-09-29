@@ -1,6 +1,8 @@
 import React from "react";
 import style from "./DataTable.module.css";
 import TocIcon from "@mui/icons-material/Toc";
+import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 const DataTable = ({ headers, data, onEdit, onDelete, userAction }) => {
   return (
@@ -15,6 +17,7 @@ const DataTable = ({ headers, data, onEdit, onDelete, userAction }) => {
           <th className={style.th}>Action</th>
         </tr>
       </thead>
+
       <tbody>
         {data.map((row, rowIndex) => (
           <tr key={rowIndex} className={style.tr}>
@@ -23,19 +26,20 @@ const DataTable = ({ headers, data, onEdit, onDelete, userAction }) => {
                 {value}
               </td>
             ))}
+
             {userAction ? (
               <td className={style.td}>
                 <button
                   onClick={() => onEdit(rowIndex)}
                   className={style.editBtn}
                 >
-                  ✏️
+                  <EditIcon />
                 </button>
                 <button
                   onClick={() => onDelete(rowIndex)}
                   className={style.deleteBtn}
                 >
-                  🗑️
+                  <DeleteIcon />
                 </button>
               </td>
             ) : (

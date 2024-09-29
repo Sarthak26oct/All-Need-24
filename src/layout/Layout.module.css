@@ -1,0 +1,28 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background-image: url("../assets/images/Main.png");
+  background-repeat: no-repeat;
+  background-position: right 50px bottom 50px;
+  background-size: 500px;
+}
+
+aside {
+  margin-top: 3.5rem;
+}
+
+.open {
+  width: 18%;
+  transition: width 0.3s ease;
+}
+
+.close {
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.content {
+  width: 100%;
+  padding: 70px 30px;
+  transition: width 0.3s ease;
+}

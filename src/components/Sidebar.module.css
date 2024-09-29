@@ -1,21 +1,15 @@
 .sidebar {
-  background-color: #3b0059;
-  height: 100vh;
+  background-color: #3a0063;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
-  position: fixed;
-  transition: width 0.3s ease;
+  position: relative;
   overflow: hidden;
-  margin-top: 3.5rem;
 }
 
 .sidebar a {
   text-decoration: none;
   gap: 1rem;
-}
-
-.open {
-  width: 13rem;
 }
 
 .closed {
@@ -34,7 +28,7 @@
 
 .menuItem:hover,
 .active {
-  background-color: #50106e;
+  background-color: #441962;
   color: gold;
   border-left: solid 3px gold;
 }

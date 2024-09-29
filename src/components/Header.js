@@ -1,7 +1,7 @@
 import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import profileIcon from "../assets/images/Profile.png";
 import styles from "./Header.module.css";
 
 const Header = ({ isOpen, toggleSidebar }) => {
@@ -24,7 +24,7 @@ const Header = ({ isOpen, toggleSidebar }) => {
 
         <div className={styles.userProfile}>
           <span>Alex (Vendor)</span>
-          <AccountCircleIcon className={styles.profileIcon} />
+          <img src={profileIcon} alt="Profile" className={styles.profileIcon} />
           <KeyboardArrowDownIcon />
         </div>
       </div>

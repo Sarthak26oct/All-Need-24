@@ -10,7 +10,7 @@ thead tr {
 }
 
 .th {
-  background-color: #52057b;
+  background-color: #3a0063;
   color: white;
   padding: 12px;
   text-align: left;
@@ -39,18 +39,21 @@ thead tr {
   border: none;
   cursor: pointer;
   font-size: 16px;
+  border: solid 2px black;
+  border-radius: 3px;
 }
 
 .editBtn {
-  color: #ffa500;
+  color: #2f0050;
+  margin-right: 5px;
 }
 
 .deleteBtn {
-  color: #ff4d4d;
+  color: #d10000;
 }
 
 .listbtn {
-  background-color: #52057b;
+  background-color: #3a0063;
 }
 
 .editBtn:hover,

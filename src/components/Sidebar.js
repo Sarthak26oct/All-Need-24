@@ -11,12 +11,13 @@ import BoxIcon from "@mui/icons-material/AllInbox";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
 import { NavLink } from "react-router-dom";
+import ProfileSection from "./ProfileSection";
 
 const Sidebar = ({ isOpen }) => {
   return (
-    <div
-      className={`${styles.sidebar} ${isOpen ? styles.open : styles.closed}`}
-    >
+    <div className={`${styles.sidebar} ${isOpen ? "" : styles.closed}`}>
+      <ProfileSection isOpen={isOpen} className={styles.menuItem} />
+
       <NavLink
         to="/dashboard"
         className={({ isActive }) =>

@@ -1,16 +1,15 @@
 .dashboardContainer {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .content {
   width: 100%;
-
 }
 
 .content h2 {
-  color: #55025d;
+  color: #3a0063;
 }
 
 .cards {

@@ -32,12 +32,12 @@
 }
 
 .openHamburger {
-  background-color: #3b0059;
+  background-color: #3a0063;
   display: flex;
   align-items: center;
   cursor: pointer;
   padding: 1rem;
-  width: 13rem;
+  width: 14.75%;
   gap: 1rem;
   transition: width 0.3s ease, background-color 0.3s ease;
 }
@@ -48,7 +48,7 @@
 }
 
 .logo h1 {
-  color: #3b0059;
+  color: #3a0063;
   font-size: 24px;
   margin: 0;
   margin-left: 10px;
@@ -58,11 +58,15 @@
   display: flex;
   align-items: center;
   font-size: 1rem;
-  color: #3b0059;
+  color: #3a0063;
   cursor: pointer;
   margin-right: 10px;
 }
 
+.userProfile span {
+  margin-right: 5px;
+}
+
 .profileIcon {
-  font-size: 2rem;
+  width: 2.3rem;
 }

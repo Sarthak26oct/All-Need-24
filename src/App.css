@@ -1,23 +1,9 @@
 .app {
   display: flex;
-  background-color: rgb(223,222,222);
+  background-color: rgb(223, 222, 222);
   min-height: 100vh;
-}
-
-.sidebar {
-  transition: width 0.3s;
 }
 
 .main {
   flex-grow: 1;
-  transition: margin-left 0.3s;
-  padding: 80px 20px 20px;
-}
-
-.sidebar-open .main {
-  margin-left: 13rem;
-}
-
-.sidebar-closed .main {
-  margin-left: 0;
 }

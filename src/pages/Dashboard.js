@@ -16,6 +16,8 @@ const Dashboard = () => {
               key={index}
               title={card.title}
               description={card.description}
+              backgroundImage={card.backgroundImage}
+              iconImage={card.iconImage}
             />
           ))}
         </div>
