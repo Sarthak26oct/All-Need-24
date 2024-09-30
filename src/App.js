@@ -18,6 +18,8 @@ import Vendor from "./pages/Vendor";
 import Business from "./pages/Business";
 import Category from "./pages/Category";
 import OrderDetails from "./pages/OrderDetails";
+import SubCategory from "./pages/SubCategory";
+import UserManagement from "./pages/UserManegement";
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
                 <Route path="/vendor" element={<Vendor />} />
                 <Route path="/business" element={<Business />} />
                 <Route path="/category" element={<Category />} />
+                <Route path="/sub-category" element={<SubCategory />} />
+                <Route path="/user-management" element={<UserManagement />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>
