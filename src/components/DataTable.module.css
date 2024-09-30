@@ -61,6 +61,25 @@ thead tr {
   opacity: 0.8;
 }
 
+.td div {
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.pending {
+  background-color: #e5881a;
+}
+
+.delivered {
+  background-color: #12ae51;
+}
+
+.canceled {
+  background-color: #dc3545;
+}
+
 @media (max-width: 768px) {
   .table,
   .th,

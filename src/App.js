@@ -15,6 +15,9 @@ import User from "./pages/User";
 import UpdateUser from "./pages/UpdateUser";
 import Layout from "./layout/Layout";
 import Vendor from "./pages/Vendor";
+import Business from "./pages/Business";
+import Category from "./pages/Category";
+import OrderDetails from "./pages/OrderDetails";
 
 function App() {
   return (
@@ -29,7 +32,10 @@ function App() {
                 <Route path="/dashboard/user/:id" element={<UpdateUser />} />
                 <Route path="/user" element={<User />} />
                 <Route path="/order-history" element={<OrderHistory />} />
+                <Route path="/order-detail/:id" element={<OrderDetails />} />
                 <Route path="/vendor" element={<Vendor />} />
+                <Route path="/business" element={<Business />} />
+                <Route path="/category" element={<Category />} />
                 <Route path="*" element={<NotFound />} />
               </Route>
             </Routes>

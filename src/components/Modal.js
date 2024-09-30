@@ -6,7 +6,7 @@ const Modal = ({ isOpen, onClose, onConfirm, heading, status }) => {
   if (!isOpen) return null;
 
   return ReactDOM.createPortal(
-    <div className={styles.modalOverlay} onClick={onClose}>
+    <div className={styles.modalOverlay}>
       <div className={styles.modalContent}>
         <h2>{heading}</h2>
 

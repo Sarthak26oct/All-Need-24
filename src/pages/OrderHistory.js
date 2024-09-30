@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import DataTable from "../components/DataTable";
 import styles from "./UpdateUser.module.css";
+import { useNavigate } from "react-router-dom";
 
 const OrderHistory = () => {
+  const navigate = useNavigate();
   const [users, setUsers] = useState([
     {
       Address: "John Doe",
@@ -36,10 +38,8 @@ const OrderHistory = () => {
     "Grand Total",
   ];
 
-  const handleDelete = (index) => {
-    console.log(`Delete user at index: ${index}`);
-    const updatedUsers = users.filter((_, i) => i !== index);
-    setUsers(updatedUsers);
+  const handleViewDetails = (index) => {
+    navigate(`/order-detail/${index}`);
   };
 
   const userWithSerialNo = users.map((user, index) => ({
@@ -52,11 +52,14 @@ const OrderHistory = () => {
       <div className={styles.path}>
         <span className={styles.underline}>Dashboard </span>/ Order History
       </div>
+
       <h2>Order History</h2>
+
       <DataTable
         headers={headers}
         data={userWithSerialNo}
-        onDelete={handleDelete}
+        onViewClick={handleViewDetails}
+        userAction
       />
     </div>
   );

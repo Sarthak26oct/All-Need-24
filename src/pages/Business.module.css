@@ -1,0 +1,26 @@
+.path {
+  color: #55025d;
+  margin-bottom: 1rem;
+}
+
+.underline {
+  border-bottom: solid 1px #55025d;
+}
+
+.addBusiness {
+  margin: 1rem 0 1rem 1rem;
+  width: 10rem;
+  cursor: pointer;
+  background-color: #3a0063;
+  color: #fff;
+  border: solid 1px #3a0063;
+}
+
+.addBusiness:hover {
+  background-color: #50106e;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+}

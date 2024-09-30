@@ -89,6 +89,7 @@ const User = () => {
         onEdit={handleEdit}
         onDelete={handleDelete}
         userAction
+        showEditDeleteButton
       />
     </div>
   );
